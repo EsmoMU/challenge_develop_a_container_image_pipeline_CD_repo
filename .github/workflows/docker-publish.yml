@@ -9,8 +9,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 jobs:
   integration:
-     runs-on: ubuntu-latest
-     needs: EsmoMU/.github/workflows/python-app-CI.yml@master
+     uses: EsmoMU/.github/workflows/python-app-CI.yml@master
      permissions:
        contents: read
        checks: write
