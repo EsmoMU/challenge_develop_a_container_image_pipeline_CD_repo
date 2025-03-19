@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 jobs:
   integration:
-     uses: EsmoMU/.github/workflows/python-app-CI.yml@master
+     uses: EsmoMU/challenge_develop_a_container_image_pipeline_app_repo/.github/workflows/python-app-CI.yml@master
      permissions:
        contents: read
        checks: write
