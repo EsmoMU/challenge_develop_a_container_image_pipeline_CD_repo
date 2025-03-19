@@ -11,7 +11,7 @@ jobs:
   integration:
      uses: EsmoMU/challenge_develop_a_container_image_pipeline_app_repo/.github/workflows/python-app-CI.yml@master
      permissions:
-       contents: read
+       contents: write
        checks: write
   build:
     needs: integration
